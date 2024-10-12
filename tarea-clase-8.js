@@ -15,3 +15,13 @@ function validarCantidadIntegrantes(cantidad){
         console.log("Se ha verificado correctamente la cantidad de integrantes.");
     }
 }
+
+function validarEdadesIntegrantes(edad){
+    if(edad < 0){
+        console.error("La edad no puede ser negativa.");
+    }else if(edad % 1 !== 0){
+        console.error("La edad no puede tener decimales.");
+    }else{
+        console.log("Se ha verificado correctamente la edad de los integrantes.");
+    }
+}
