@@ -25,3 +25,13 @@ function validarEdadesIntegrantes(edad){
         console.log("Se ha verificado correctamente la edad de los integrantes.");
     }
 }
+
+function validarSueldos(sueldo){
+    if(sueldo === 0){
+        console.error("El sueldo no puede ser 0.");
+    }else if(sueldo < 0){
+        console.error("El sueldo no puede ser negativo.");
+    }else{
+        console.log("Se ha verificado correctamente el sueldo.");
+    }
+}
